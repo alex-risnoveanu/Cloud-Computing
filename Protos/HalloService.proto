@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "HalloResponse.proto";
+import "HalloRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service HalloService {
+	rpc SayHi(HalloRequest) returns (HalloResponse);
+}
